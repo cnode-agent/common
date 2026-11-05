@@ -2084,10 +2084,12 @@ checksum = "dc33ff2d4973d518d823d61aa239014831e521c75da58e3df4840d3f47749d09"
 [[package]]
 name = "ragu"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "blake2b_simd",
+ "ragu_circuits",
  "ragu_core",
+ "ragu_primitives",
  "rand 0.10.2",
  "zakura-udon 0.1.0",
 ]
@@ -2095,16 +2097,17 @@ dependencies = [
 [[package]]
 name = "ragu_acceleration"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "ragu_backend",
+ "ragu_core",
  "zakura-udon 0.1.0",
 ]
 
 [[package]]
 name = "ragu_backend"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "ragu_circuits",
  "ragu_core",
@@ -2114,7 +2117,7 @@ dependencies = [
 [[package]]
 name = "ragu_circuits"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "blake2b_simd",
  "ragu_core",
@@ -2127,7 +2130,7 @@ dependencies = [
 [[package]]
 name = "ragu_core"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "ragu_macros",
  "tachyon-maybe-rayon",
@@ -2138,7 +2141,7 @@ dependencies = [
 [[package]]
 name = "ragu_macros"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "num-bigint 0.4.8",
  "num-traits",
@@ -2151,7 +2154,7 @@ dependencies = [
 [[package]]
 name = "ragu_pcd"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "lazy_static",
  "ragu_acceleration",
@@ -2169,7 +2172,7 @@ dependencies = [
 [[package]]
 name = "ragu_primitives"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/ragu?rev=0725b5244371c37e9c19a80b0f660ce11ac5f74a#0725b5244371c37e9c19a80b0f660ce11ac5f74a"
+source = "git+https://github.com/cnode-agent/ragu?branch=c%2Fmock-wire%2Bdriver#bf3b2a949c1bfdd538754031ff31fad9b8c8bf20"
 dependencies = [
  "ragu_core",
  "ragu_macros",
@@ -4036,7 +4039,7 @@ dependencies = [
 [[package]]
 name = "zcash_tachyon"
 version = "0.0.0"
-source = "git+https://github.com/tachyon-zcash/tachyon?rev=7e502548db33845dbaacdc0efe905d1a3c45e626#7e502548db33845dbaacdc0efe905d1a3c45e626"
+source = "git+https://github.com/cnode-agent/tachyon?branch=c%2Fmock-wire%2Bdriver#a86bd484810183b7ad2a0485bbb8e7ec779cfbae"
 dependencies = [
  "blake2b_simd",
  "corez",
