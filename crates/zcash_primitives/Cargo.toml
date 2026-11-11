@@ -43,7 +43,7 @@ zcash_script.workspace = true
 [target.'cfg(zcash_unstable = "nutachyon")'.dependencies]
 # TEMPORARY: tachyon fork pinned to upstream ragu main for the Tachyon
 # bundle and cached-proof stack. Return upstream after those land.
-zcash_tachyon = { git = "https://github.com/cnode-agent/tachyon", rev = "be9c22ff73f999ea9221cdc54a9290e6a578c36d", version = "0.0.0", default-features = false }
+zcash_tachyon = { git = "https://github.com/cnode-agent/tachyon", rev = "088f4e1df789fc507742a9a08d27a07604c6a247", version = "0.0.0", default-features = false }
 
 [dev-dependencies]
 assert_matches = "1.5"
