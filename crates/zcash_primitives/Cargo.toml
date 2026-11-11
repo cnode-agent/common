@@ -52,7 +52,7 @@ zcash_script = { version = "0.4.3", default-features = false }
 [target.'cfg(zcash_unstable = "nutachyon")'.dependencies]
 # TEMPORARY: use the tachyon fork pinned to upstream ragu main for devtool's
 # cached epoch-bucket and spendability proofs. Return upstream when it lands.
-zcash_tachyon = { git = "https://github.com/cnode-agent/tachyon", rev = "be9c22ff73f999ea9221cdc54a9290e6a578c36d", version = "0.0.0", default-features = false }
+zcash_tachyon = { git = "https://github.com/cnode-agent/tachyon", rev = "088f4e1df789fc507742a9a08d27a07604c6a247", version = "0.0.0", default-features = false }
 
 [dev-dependencies]
 assert_matches = "1.5"
