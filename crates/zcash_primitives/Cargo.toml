@@ -41,10 +41,9 @@ zcash_protocol.workspace = true
 zcash_script.workspace = true
 
 [target.'cfg(zcash_unstable = "nutachyon")'.dependencies]
-# TEMPORARY: c/mock-wire+driver on the cnode-agent fork tracks tachyon main
-# plus #259/#260 against the c/mock-wire+driver ragu branch. Switch back to
-# tachyon-zcash/tachyon once those land upstream.
-zcash_tachyon = { git = "https://github.com/cnode-agent/tachyon", branch = "c/mock-wire+driver", version = "0.0.0", default-features = false }
+# TEMPORARY: tachyon fork pinned to upstream ragu main for the Tachyon
+# bundle and cached-proof stack. Return upstream after those land.
+zcash_tachyon = { git = "https://github.com/cnode-agent/tachyon", rev = "c9140f5e373b5d24f8c7894a63c82f43cb7b0761", version = "0.0.0", default-features = false }
 
 [dev-dependencies]
 assert_matches = "1.5"
